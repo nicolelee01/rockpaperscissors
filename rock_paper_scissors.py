@@ -32,11 +32,20 @@ def main():
                 result = "win"
         if result == "tie":
             print("It was a tie!")
+            print("Let's play again!")
+            return True
         elif result == "win":
             print("You won!")
         else:
             print("You lost!")
-    run()
+        return False
+        
+    while True:
+        tie = run()
+        if tie == False:
+            break
+        
+
 
 if __name__ == "__main__":
     main()
