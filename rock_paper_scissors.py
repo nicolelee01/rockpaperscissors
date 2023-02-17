@@ -1,3 +1,5 @@
+import random
+
 def main():
     print("Hello user! Let's play a game of Rock, Paper, Scissors!")
     print("\n")
@@ -6,6 +8,7 @@ def main():
     print("\n")
     print("Type in your selection (rock, paper, or scissors)")
     userSelection = input()
+    computerSelection = random.choice(["rock", "paper", "scissor"])
 
 if __name__ == "__main__":
     main()
